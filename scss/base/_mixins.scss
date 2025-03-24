@@ -1,0 +1,23 @@
+@mixin responsive-font-size($min: 20, $max: 40) {
+  font-size: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+@mixin responsive-max-width($min: 20, $max: 40) {
+  width: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+@mixin responsive-padding($min: 20, $max: 40, $pos: right) {
+  padding-#{$pos}: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+@mixin responsive-margin($min: 20, $max: 40, $pos: right) {
+  margin-#{$pos}: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+@mixin border-radius($min: 20, $max: 40) {
+  border-radius: clamp(#{$min}px, #{$max / 1920 * 100}vw, #{$max}px);
+}
+
+@mixin row-height($row: 20, $str: 40) {
+  line-height: calc($str / $row);
+}

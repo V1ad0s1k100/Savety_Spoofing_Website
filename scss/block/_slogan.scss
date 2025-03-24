@@ -1,0 +1,37 @@
+.slogan__block {
+  &-title {
+    text-align: center;
+    
+    &--font {
+      font-family: var(--font-family-epilogue);
+    }
+  }
+
+
+  &--size {
+    @include responsive-max-width(300, 1274);
+    margin-inline: auto;
+  }
+}
+
+.download {
+  &__container-two--align {
+    margin-inline: auto;
+  }
+
+  &__link {
+    &-slogan--size {
+      @include responsive-padding(10, 20, block);
+      @include responsive-padding(16, 32, inline);
+    }
+
+    &-two--background {
+      background-color: var(--background-blue);
+    }
+
+    &-two--border {
+      @include border-radius(2, 9);
+      border: solid 3px var(--background-blue);
+    }
+  }
+}

@@ -1,0 +1,76 @@
+@import "../base/mixins";
+
+.header {
+  display: flex;
+  justify-content: center;
+  column-gap: 166px;
+
+  &--size {
+    @include responsive-max-width(300, 1508);
+    min-height: 100vh;
+    padding-inline: 110px 116px;
+    margin-inline: auto;
+  }
+
+  &__slogan {
+    align-self: center;
+    display: flex;
+    flex-direction: column;
+
+    &-font {
+      font-family: var(--font-family-dm-sans);
+      font-weight: var(--font-weight-bold);
+      @include responsive-font-size(30, 67);
+      line-height: 1.29;
+    }
+  }
+}
+
+.download {
+  &__container-one--size {
+    padding-top: 87px;
+    align-self: start;
+  }
+
+  &__container-two--size {
+    padding-top: 24px;
+    width: min-content;
+  }
+
+  &__link {
+    @include responsive-font-size(20, 28);
+    font-family: var(--font-family-dm-sans);
+    font-weight: var(--font-weight-bold);
+    line-height: 1.28;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &--color {
+      color: var(--text-white);
+    }
+
+    &--size {
+      @include responsive-padding(7, 11.5, block);
+      @include responsive-padding(10, 40, right);
+      @include responsive-padding(10, 34, left);
+    }
+
+    &--background {
+      background-color: var(--background-black);
+    }
+
+    &--border {
+      @include border-radius(2, 9);
+      border: solid 3px var(--background-black);
+    }
+  }
+}
+
+.window-program {
+  display: flex;
+  align-items: center;
+  &--size {
+    flex-shrink: 0.6;
+  }
+}

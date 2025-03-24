@@ -1,0 +1,23 @@
+@import "./base/variables";
+@import "./base/font-styles";
+@import "./base/mixins";
+@import "./base/normalize";
+
+@import "./block/header";
+@import "./block/footer";
+@import "./block/slogan";
+// @import "./block/advantages";
+@import "./block/description";
+
+@import "./effects/hover";
+@import "./base/media-request";
+
+.link {
+  &--text-decoration {
+    text-decoration: none;
+  }
+}
+
+.link__hover {
+  transition: var(--transition);
+}
