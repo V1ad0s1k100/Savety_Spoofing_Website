@@ -70,7 +70,12 @@
 .window-program {
   display: flex;
   align-items: center;
+
   &--size {
     flex-shrink: 0.6;
+  }
+
+  &__image {
+    box-shadow: 0 0 10px black;
   }
 }

@@ -113,8 +113,7 @@ body {
 .header {
   display: flex;
   justify-content: center;
-  -moz-column-gap: 166px;
-       column-gap: 166px;
+  column-gap: 166px;
 }
 .header--size {
   width: clamp(300px, 78.5416666667vw, 1508px);
@@ -140,7 +139,6 @@ body {
 }
 .download__container-two--size {
   padding-top: 24px;
-  width: -moz-min-content;
   width: min-content;
 }
 .download__link {
@@ -175,6 +173,9 @@ body {
 .window-program--size {
   flex-shrink: 0.6;
 }
+.window-program__image {
+  box-shadow: 0 0 10px black;
+}
 
 .logo {
   color: var(--text-blue-logo);
@@ -208,8 +209,7 @@ body {
   padding-top: clamp(50px, 3.75vw, 72px);
   padding-bottom: clamp(69px, 7.1875vw, 138px);
   margin-top: 67px;
-  -moz-column-gap: 27px;
-       column-gap: 27px;
+  column-gap: 27px;
   row-gap: 20px;
 }
 .footer__container-item:first-child {
@@ -429,8 +429,7 @@ body {
   padding-top: clamp(50px, 3.75vw, 72px);
   padding-bottom: clamp(69px, 7.1875vw, 138px);
   margin-top: 67px;
-  -moz-column-gap: 27px;
-       column-gap: 27px;
+  column-gap: 27px;
   row-gap: 20px;
 }
 .footer__container-item:first-child {
@@ -492,8 +491,7 @@ body {
 }
 @media (max-width: 1150px) {
   .header {
-    -moz-column-gap: 80px;
-         column-gap: 80px;
+    column-gap: 80px;
   }
   .header--size {
     padding-inline: 20px;
@@ -545,8 +543,7 @@ body {
   }
   .slider {
     flex-wrap: wrap;
-    -moz-column-gap: 10vw;
-         column-gap: 10vw;
+    column-gap: 10vw;
   }
   .slider__arrow-container-left {
     order: 1;
